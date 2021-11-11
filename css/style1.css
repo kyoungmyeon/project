@@ -1,0 +1,182 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+ul,li{list-style: none;}
+body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+  }
+  
+
+  /* CUSTOMIZE THE NAVBAR
+  -------------------------------------------------- */
+  
+  /* Special class on .container surrounding .navbar, used for positioning it into place. */
+  .navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    
+  }
+  
+  /* Flip around the padding for proper display in narrow viewports */
+  .navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar .container {
+    width: auto;
+  }
+  
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    height: 500px;
+    margin-bottom: 60px;
+    margin-top: 69px;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    z-index: 10;
+  }
+  .carousel .carousel-caption>.welcome{
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    top: -25%;
+    left: 43%;
+    
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 500px;
+    background-color: #777;
+  }
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 750px;
+    
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: normal;
+  }
+  .marketing .row .col-lg-4>ul{margin: 0 auto;}
+  .marketing .row .col-lg-4>ul>li { box-sizing: border-box; font-size: 16px; display: flex; justify-content: space-between;}
+  .marketing .col-lg-4>ul>li p {font-weight: 300; letter-spacing: 1px;width: 20%; }
+  .marketing .col-lg-4>ul>li span {font-weight: 400; letter-spacing: -1px; width: 75%;}
+  /* .marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+  } */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  .featurette .col-md-7>ul{margin: 0 auto;}
+  .featurette .col-md-7>ul>li { box-sizing: border-box; font-size: 16px; display: flex; justify-content: space-between;}
+  .featurette .col-md-7>ul>li p {font-weight: 300; letter-spacing: 1px;width: 20%; }
+  .featurette .col-md-7>ul>li span {font-weight: 400; letter-spacing: -1px; width: 75%;}
+
+  .marketing .featurette .col-md-pull-7 .featurette-image{width: 500px; height: 500px; background-size: cover; top: 50%;}
+
+.skillLeft {width: 900px; height: 500px; float: left;  margin-top:3%}
+.leftTit {margin: 0 120px auto; margin-top: 24px; margin-bottom: 40px; border-bottom: 1px solid #777;; box-sizing: border-box;}
+.leftTit>h3 {font-weight: 400; font-size: 24px; margin-bottom: 6px; letter-spacing: -1px; color: #777; font-weight: bold;}
+.leftTit>p {line-height: 18px; font-weight: 300; font-size: 15px; color: #000;}
+.leftTit>p:nth-child(3) {margin-bottom: 10px;}
+.leftMain {margin: 0 140px 0 0; margin-top: 20px;}
+.leftMain .skillIcon {width: 100%; height: 66px; margin-bottom: 35px;}
+.leftMain .skillIcon>img {display: block; width: 66px; height: 66px; float: left; margin-right: 40px;}
+/* .leftMain .skillIcon:nth-child(4)>img {display: block; position: relative; left: -30px; width: 110px; height: 30px; margin-right: 0; padding: 18px 0;} */
+.leftMain .skillIcon>p {font-size: 17px; font-weight: 300; margin-bottom: 11px; letter-spacing: -0.5px; color:#000}
+.leftMain .skillIcon .iconDetail {float: left;}
+.leftMain .skillIcon .iconDetail .progress_bar {width: 330px; height: 20px; box-shadow: 1px 2px 10px #d0d0d0; position: relative;}
+.leftMain .skillIcon .iconDetail .progress_bar>.bar {position: absolute; top: 0; left: 0; bottom: 0; background: #777; width: 50px;}
+.leftMain .skillIcon .iconDetail .progress_bar>.num {position: absolute; top: 0; bottom: 0; right: -40px; font-size: 14px; color: #000; line-height: 20px;}
+.leftBottom {margin: 0 150px auto; margin-top: 20px;}
+.leftBottom>p:nth-child(1) {font-weight: 400; font-size: 18px; letter-spacing: -1px;}
+.leftBottom>p:nth-child(1)>span {font-size: 14px; font-weight: 300;}
+.leftBottom>p:nth-child(2) {padding-top: 10px; font-weight: 300; font-size: 14px;}
+
+.title-wrap{width: 100%; height: 500px; position: relative; top: 3%;}
+.title-wrap p{text-align: center; font-size: 6vw;font-family: "Kaushan Script", cursive; margin-bottom: 7%; color: rgb(138, 45, 138); padding-top: 3%;}
+#main{height: 1000px; overflow: hidden; margin-top: 3.7%; }
+#wrapper{background: linear-gradient(-255deg,rgb(81, 233, 246) 0%,rgb(156, 21, 173) 100%);}
+  /* RESPONSIVE CSS
+port css
+
+
+
+  -------------------------------------------------- */
+  
+  @media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+      margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+      border-radius: 4px;
+    }
+  
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 20px;
+      font-size: 21px;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .featurette-heading {
+      margin-top: 120px;
+    }
+  }
